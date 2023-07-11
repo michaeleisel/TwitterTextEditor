@@ -361,6 +361,12 @@ public final class TextEditorView: UIView {
         layoutManager.addTextContainer(textContainer)
 
         textView = TextView(frame: .zero, textContainer: textContainer)
+        textView.autocapitalizationType = .none
+        textView.autocorrectionType = .no
+        textView.spellCheckingType = .no
+        textView.smartQuotesType = .no
+        textView.smartDashesType = .no
+
 
         editingContent = textView.editingContent
 
