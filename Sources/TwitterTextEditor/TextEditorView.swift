@@ -338,7 +338,7 @@ extension EditingContent: TextEditorViewEditingContent {
 public final class TextEditorView: UIView {
     private let textStorage: NSTextStorage
 
-    let textView: TextView
+    public let textView: TextView
 
     private var userInteractionDidChangeTextViewScheduler: DebounceScheduler!
     private var updatePlaceholderTextScheduler: DebounceScheduler!
